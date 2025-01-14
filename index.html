@@ -1,0 +1,447 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/main.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="stylesheet" href="./icons/css/all.css" />
+    <title>Цитаты Джейсона Стетхема</title>
+  </head>
+  <body class="body">
+    <div id="stars-container"></div>
+
+    <header class="header">
+      <div class="container">
+        <nav class="header__nav nav-menu">
+          <div class="header__logo">
+            <img src="img/Logo.svg" alt="Цитаты Джейсона Стетхема" />
+          </div>
+          <div class="header__menu main-menu">
+            <ul class="menu__list">
+              <li class="menu__item">
+                <a href="#" class="menu__link">Генератор</a>
+              </li>
+              <li class="menu__item">
+                <a href="#" class="menu__link">Поймать</a>
+              </li>
+              <li class="menu__item">
+                <a href="#" class="menu__link">Поделиться</a>
+              </li>
+              <li class="menu__item">
+                <a href="#" class="menu__link">How to use</a>
+              </li>
+              <li class="menu__item">
+                <a href="#" class="menu__link">Contacts</a>
+              </li>
+              <li class="menu__item join-btn__mobile">
+                <a href="#" class="header-menu__btn"
+                  >Присоединиться <i class="fa-solid fa-angle-right"></i
+                ></a>
+              </li>
+            </ul>
+          </div>
+          <div class="header__btn">
+            <a href="#" class="header-menu__btn"
+              >Присоединиться <i class="fa-solid fa-angle-right"></i
+            ></a>
+          </div>
+          <div class="header__burger">
+            <span></span>
+          </div>
+        </nav>
+        <div class="header__content">
+          <h1 class="main-title">Вселенная Джейсона Стетхема</h1>
+          <div class="header__quote">
+            <div class="header__quote_text">
+              <p>
+                Мама учила не ругаться матом, но жизнь научила не ругаться матом
+                при маме.
+              </p>
+            </div>
+            <div class="rating header-rating">
+              <i class="fa-regular fa-star star-rating"></i>
+              <i class="fa-regular fa-star star-rating"></i>
+              <i class="fa-regular fa-star star-rating"></i>
+              <i class="fa-regular fa-star star-rating"></i>
+              <i class="fa-regular fa-star star-rating"></i>
+            </div>
+            <div class="header__quote_btn">
+              <button class="button-quote__generate btn">
+                <i class="fa-solid fa-quote-left"></i>Сгенерировать
+              </button>
+              <button class="button-quote__favorite btn">
+                <i class="fa-regular fa-star"></i>В избранное
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+    <div class="wrapper">
+      <div class="content">
+        <section class="space">
+          <div class="container">
+            <div class="space__content">
+              <div class="orbit orbit-1">
+                <img src="./img/spase-center.png" alt="" />
+              </div>
+              <div class="orbit orbit-2">
+                <div class="quote__space">
+                  <div class="quote__person-logo">
+                    <img src="./img/logo-acc-space.png" alt="Name" class="" />
+                  </div>
+                  <div class="quote">
+                    <p>Настоящий мужчина, как ковер...</p>
+                  </div>
+                </div>
+              </div>
+              <div class="orbit orbit-3">
+                <div class="quote__space">
+                  <div class="quote__person-logo">
+                    <img src="./img/logo-acc-space.png" alt="Name" class="" />
+                  </div>
+                  <div class="quote">
+                    <p>Мама учила не ругаться матом...</p>
+                  </div>
+                </div>
+              </div>
+              <div class="orbit orbit-4">
+                <div class="quote__space">
+                  <div class="quote__person-logo">
+                    <img src="./img/logo-acc-space.png" alt="Name" class="" />
+                  </div>
+                  <div class="quote">
+                    <p>Если закрыть глаза, становится...</p>
+                  </div>
+                </div>
+              </div>
+              <div class="orbit orbit-5">
+                <div class="quote__space">
+                  <div class="quote__person-logo">
+                    <img src="./img/logo-acc-space.png" alt="Name" class="" />
+                  </div>
+                  <div class="quote">
+                    <p>Если тебе где-то не рады...</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="quotes-action">
+          <div class="container">
+            <div class="quotes-action__row">
+              <div class="quotes-action__share-quote quotes-action__card">
+                <div class="action__card_text">
+                  <h3 class="action__card_title">Поделись мыслями</h3>
+                  <p class="action__card_subtitle">
+                    Все мысли являются собственностью Джейсона Стетхема. Но ты
+                    можешь ими со всеми поделиться
+                  </p>
+                </div>
+
+                <div class="share__qoute_form-container">
+                  <div class="share__qoute-form-icon">
+                    <i class="fa-regular fa-lightbulb"></i>
+                  </div>
+                  <form class="share__qoute-form" action="#" method="post">
+                    <input
+                      name="message"
+                      id="yourMessage"
+                      class="your-message"
+                      placeholder="Отправь мысль во вселенную"
+                    />
+                  </form>
+                  <div class="form__handler">
+                    <i class="fa-regular fa-face-smile"></i>
+                    <div class="form__button">
+                      <button class="form-btn" type="submit">
+                        <i class="fa-solid fa-arrow-up"></i>
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="quotes-action__last-quotes quotes-action__card">
+                <div class="action__card_text">
+                  <h3 class="action__card_title">
+                    Последние мысли Джейсона Стетхема
+                  </h3>
+                </div>
+                <div class="last__list-qoutes">
+                  <li class="last__list-qoutes_item">
+                    <div class="quotes-item">
+                      <div class="quotes-item__content">
+                        <div class="quotes-item__author">
+                          <div class="quotes-author__profile">
+                            <div class="profile__logo">
+                              <img src="./img/profile-logo.png" alt="Logo" />
+                            </div>
+                          </div>
+                        </div>
+                        <div class="quotes-item__quote">
+                          <p>
+                            Мама учила не ругаться матом, но жизнь научила не
+                            ругаться матом при маме.
+                          </p>
+                          <div class="quotes-item__quote_botom">
+                            <div class="rating last-quotes__rating">
+                              <i class="fa-regular fa-star star-rating"></i>
+                              <i class="fa-regular fa-star star-rating"></i>
+                              <i class="fa-regular fa-star star-rating"></i>
+                              <i class="fa-regular fa-star star-rating"></i>
+                              <i class="fa-regular fa-star star-rating"></i>
+                            </div>
+                            <div class="last-quotes__date">
+                              <p>12 декабря 2024</p>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="quotes-item__infavorite">
+                          <i class="fa-regular fa-star"></i>
+                        </div>
+                      </div>
+                    </div>
+                  </li>
+                  <li class="last__list-qoutes_item">
+                    <div class="quotes-item">
+                      <div class="quotes-item__content">
+                        <div class="quotes-item__author">
+                          <div class="quotes-author__profile">
+                            <div class="profile__logo">
+                              <img src="./img/profile-logo.png" alt="Logo" />
+                            </div>
+                          </div>
+                        </div>
+                        <div class="quotes-item__quote">
+                          <p>Если ты смелый, ловкий и очень сексуальный</p>
+                          <div class="quotes-item__quote_botom">
+                            <div class="rating last-quotes__rating">
+                              <i class="fa-regular fa-star star-rating"></i>
+                              <i class="fa-regular fa-star star-rating"></i>
+                              <i class="fa-regular fa-star star-rating"></i>
+                              <i class="fa-regular fa-star star-rating"></i>
+                              <i class="fa-regular fa-star star-rating"></i>
+                            </div>
+                            <div class="last-quotes__date">
+                              <p>12 декабря 2024</p>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="quotes-item__infavorite">
+                          <i class="fa-regular fa-star"></i>
+                        </div>
+                      </div>
+                    </div>
+                  </li>
+                  <li class="last__list-qoutes_item">
+                    <div class="quotes-item">
+                      <div class="quotes-item__content">
+                        <div class="quotes-item__author">
+                          <div class="quotes-author__profile">
+                            <div class="profile__logo">
+                              <img src="./img/profile-logo.png" alt="Logo" />
+                            </div>
+                          </div>
+                        </div>
+                        <div class="quotes-item__quote">
+                          <p>
+                            Если тебе где-то не рады в рваных носках, то и в
+                            целых туда идти не стоит.
+                          </p>
+                          <div class="quotes-item__quote_botom">
+                            <div class="rating last-quotes__rating">
+                              <i class="fa-regular fa-star star-rating"></i>
+                              <i class="fa-regular fa-star star-rating"></i>
+                              <i class="fa-regular fa-star star-rating"></i>
+                              <i class="fa-regular fa-star star-rating"></i>
+                              <i class="fa-regular fa-star star-rating"></i>
+                            </div>
+                            <div class="last-quotes__date">
+                              <p>12 декабря 2024</p>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="quotes-item__infavorite">
+                          <i class="fa-regular fa-star"></i>
+                        </div>
+                      </div>
+                    </div>
+                  </li>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="popular">
+          <div class="container">
+            <h2 class="popular__title">Популярные мысли</h2>
+
+            <div class="popular__content">
+              <div class="popular__row">
+                <div class="popular__column">
+                  <div class="popular__card">
+                    <div class="popular__card_title">
+                      <div class="popular__card_logo">
+                        <img src="./img/profile-logo.png" alt="Logo" />
+                      </div>
+                      <div class="popular__card_rang">
+                        <p>Чухан</p>
+                      </div>
+                    </div>
+                    <div class="popular__card_content">
+                      <div class="popular__card_name">Артем Артемов</div>
+                      <div class="popular__card_text">
+                        <p>
+                          <i
+                            >Настоящий мужчина, как ковер тети Зины — с каждым
+                            годом лысеет.</i
+                          >
+                        </p>
+                      </div>
+                    </div>
+                    <div class="popular__card_handler">
+                      <button class="popular__card_infavorite btn">
+                        <i class="fa-regular fa-star"></i>В избранное
+                      </button>
+                      <div class="rating">
+                        <i class="fa-regular fa-star star-rating"></i>
+                        <i class="fa-regular fa-star star-rating"></i>
+                        <i class="fa-regular fa-star star-rating"></i>
+                        <i class="fa-regular fa-star star-rating"></i>
+                        <i class="fa-regular fa-star star-rating"></i>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="popular__column">
+                  <div class="popular__card">
+                    <div class="popular__card_title">
+                      <div class="popular__card_logo">
+                        <img src="./img/profile-logo.png" alt="Logo" />
+                      </div>
+                      <div class="popular__card_rang">
+                        <p>Шестерка</p>
+                      </div>
+                    </div>
+                    <div class="popular__card_content">
+                      <div class="popular__card_name">Артем Артемов</div>
+                      <div class="popular__card_text">
+                        <p>
+                          <i
+                            >Настоящий мужчина, как ковер тети Зины — с каждым
+                            годом лысеет.</i
+                          >
+                        </p>
+                      </div>
+                    </div>
+                    <div class="popular__card_handler">
+                      <button class="popular__card_infavorite btn">
+                        <i class="fa-regular fa-star"></i> В избранное
+                      </button>
+                      <div class="rating">
+                        <i class="fa-regular fa-star star-rating"></i>
+                        <i class="fa-regular fa-star star-rating"></i>
+                        <i class="fa-regular fa-star star-rating"></i>
+                        <i class="fa-regular fa-star star-rating"></i>
+                        <i class="fa-regular fa-star star-rating"></i>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="popular__column">
+                  <div class="popular__card">
+                    <div class="popular__card_title">
+                      <div class="popular__card_logo">
+                        <img src="./img/profile-logo.png" alt="Logo" />
+                      </div>
+                      <div class="popular__card_rang">
+                        <p>Легенда</p>
+                      </div>
+                    </div>
+                    <div class="popular__card_content">
+                      <div class="popular__card_name">Артем Артемов</div>
+                      <div class="popular__card_text">
+                        <p>
+                          <i
+                            >Настоящий мужчина, как ковер тети Зины — с каждым
+                            годом лысеет.</i
+                          >
+                        </p>
+                      </div>
+                    </div>
+                    <div class="popular__card_handler">
+                      <button class="popular__card_infavorite btn">
+                        <i class="fa-regular fa-star"></i> В избранное
+                      </button>
+                      <div class="rating">
+                        <i class="fa-regular fa-star star-rating"></i>
+                        <i class="fa-regular fa-star star-rating"></i>
+                        <i class="fa-regular fa-star star-rating"></i>
+                        <i class="fa-regular fa-star star-rating"></i>
+                        <i class="fa-regular fa-star star-rating"></i>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+      </div>
+    </div>
+    <footer class="footer">
+      <div class="container">
+        <div class="footer__content">
+          <div class="footer__top">
+            <div class="footer-top__logo">
+              <img src="img/Logo.svg" alt="Цитаты Джейсона Стетхема" />
+              <p class="logo-text">цитаты джейсона стетхема</p>
+            </div>
+            <div class="footer-top__menu main-menu">
+              <ul class="menu__list">
+                <li class="menu__item">
+                  <a href="#" class="menu__link">Генератор</a>
+                </li>
+                <li class="menu__item">
+                  <a href="#" class="menu__link">Поймать</a>
+                </li>
+                <li class="menu__item">
+                  <a href="#" class="menu__link">Поделиться</a>
+                </li>
+                <li class="menu__item">
+                  <a href="#" class="menu__link">How to use</a>
+                </li>
+                <li class="menu__item">
+                  <a href="#" class="menu__link">Contacts</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="footer__bottom">
+            <div class="footer-bottom__copyright">
+              © 2025 цитаты-джейсона-стейтема.рф<br />
+              Данный проект носит исключительно юмористический характер
+            </div>
+            <div class="footer-bottom__social">
+              <div class="footer-social__telegram">
+                <a href="#" class="tg-link"
+                  ><i class="fa-brands fa-telegram"></i
+                ></a>
+              </div>
+              <div class="footer-social__github">
+                <a href="#" class="gh-link"
+                  ><i class="fa-brands fa-github"></i
+                ></a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <script src="./js/index.js	" type="module"></script>
+  </body>
+</html>
