@@ -6,13 +6,11 @@ function burger() {
     const body = document.body;
 
     headerBurger.addEventListener('click', function () {
-      console.log('yes');
       headerBurger.classList.toggle('active');
       menu.classList.toggle('active');
       body.classList.toggle('lock');
     });
     footerBurger.addEventListener('click', function () {
-      console.log('yes');
       footerBurger.classList.toggle('active');
       menu.classList.toggle('active');
       body.classList.toggle('lock');

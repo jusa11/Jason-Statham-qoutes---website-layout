@@ -1,0 +1,68 @@
+.last__list-qoutes {
+  margin: 20px 0 0 0;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.quotes-item {
+  color: $color-main;
+  border: 1px solid $color-border;
+  border-radius: 16px;
+  font-size: 15px;
+  padding: 15px 10px;
+}
+
+.quotes-item__content {
+  display: flex;
+  align-items: center;
+}
+.quotes-item__img {
+  margin: 0 15px 0 0;
+  max-height: 80px;
+}
+
+.quotes-item__quote {
+  flex: 1 1 90%;
+}
+
+.quotes-item__infavorite {
+  font-size: 20px;
+  margin: 0 0 0 20px;
+}
+
+.quotes-author__profile {
+  margin: 0 10px 0 0;
+}
+.profile__logo {
+  height: 50px;
+}
+.profile__logo img {
+  max-height: 100%;
+}
+
+.quotes-item__quote_botom {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 10px 0 0 0;
+  font-size: 12px;
+}
+
+.last-quotes__handler {
+  display: flex;
+  gap: 10px;
+  font-size: 18px;
+}
+
+@include mediaTablet {
+  .quotes-item {
+    font-size: 13px;
+  }
+}
+@include mediaBigMobile {
+}
+@include mediaMediumMobile {
+}
+@include mediaSmallMobile {
+}

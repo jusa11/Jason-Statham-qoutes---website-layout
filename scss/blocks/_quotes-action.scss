@@ -1,0 +1,23 @@
+.quotes-action__row {
+  display: flex;
+  margin: 80px 0 0 0;
+  gap: 40px;
+}
+.quotes-action__share-quote {
+  flex: 1 1 45%;
+}
+.quotes-action__last-quotes {
+  flex: 1 1 55%;
+}
+.quotes-action__column {
+  display: flex;
+  gap: 20px;
+}
+
+@include mediaTablet {
+  .quotes-action__column {
+    gap: 40px;
+    flex-direction: column;
+		width: 100%;
+  }
+}
