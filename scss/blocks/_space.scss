@@ -1,255 +1,32 @@
 .space__content {
   position: relative;
-  width: 1150px;
-  height: 500px;
-}
-
-/* Стили орбит */
-.orbit {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  border: 1px dashed rgba(255, 255, 255, 0.3);
-  border-radius: 50%;
-}
-
-/* Размеры орбит */
-.orbit-1 {
-  width: 10px;
-  height: 10px;
-  position: relative;
-  border: 0px solid transparent;
+  top: 0;
+  left: 36%;
+  height: 100vh;
+  will-change: transform, opacity;
 }
 
 .orbit-1 img {
   position: absolute;
-  top: -70px;
-  left: -70px;
-  width: 150px;
-  height: 150px;
+  height: 50%;
+  top: 21%;
+  left: 10%;
+}
+.orbit-2 img {
+  position: absolute;
+  height: 70%;
+  top: 11%;
+  left: 5%;
+}
+.orbit-3 img {
+  position: absolute;
+  height: 90%;
+  top: 0%;
+  left: 0%;
 }
 
-.orbit-2 {
-  width: 50px;
-  height: 50px;
-}
-.orbit-3 {
-  width: 200px;
-  height: 200px;
-}
-.orbit-4 {
-  width: 350px;
-  height: 350px;
-}
-.orbit-5 {
-  width: 500px;
-  height: 500px;
-}
-
-.quote__space {
-  display: flex;
+.planet__quote {
   position: absolute;
   top: 0;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  background: rgba(0, 0, 0, 0.6);
-  padding: 15px;
-  border-radius: 12px;
-  font-size: 14px;
-  color: #fff;
-  width: 210px;
-}
-
-.quote {
-  margin: 0 0 0 10px;
-  overflow: hidden; /* Скрыть текст, выходящий за пределы */
-  display: -webkit-box; /* Установить контейнер */
-  -webkit-line-clamp: 3; /* Ограничить текст тремя строками */
-  word-break: break-all;
-  text-overflow: ellipsis;
-}
-
-/* Анимация для цитат */
-.orbit-1 .quote__space {
-  animation: rotate-1 8s linear infinite;
-}
-.orbit-2 .quote__space {
-  animation: rotate-2 10s linear infinite;
-}
-.orbit-3 .quote__space {
-  animation: rotate-3 12s linear infinite;
-}
-.orbit-4 .quote__space {
-  animation: rotate-4 14s linear infinite;
-}
-.orbit-5 .quote__space {
-  animation: rotate-5 16s linear infinite;
-}
-
-/* Анимация вращения */
-@keyframes rotate-1 {
-  0% {
-    transform: rotate(0deg) translate(50px) rotate(0deg);
-  }
-  100% {
-    transform: rotate(360deg) translate(50px) rotate(-360deg);
-  }
-}
-@keyframes rotate-2 {
-  0% {
-    transform: rotate(0deg) translate(100px) rotate(0deg);
-  }
-  100% {
-    transform: rotate(360deg) translate(100px) rotate(-360deg);
-  }
-}
-@keyframes rotate-3 {
-  0% {
-    transform: rotate(0deg) translate(150px) rotate(0deg);
-  }
-  100% {
-    transform: rotate(360deg) translate(150px) rotate(-360deg);
-  }
-}
-@keyframes rotate-4 {
-  0% {
-    transform: rotate(0deg) translate(200px) rotate(0deg);
-  }
-  100% {
-    transform: rotate(360deg) translate(200px) rotate(-360deg);
-  }
-}
-@keyframes rotate-5 {
-  0% {
-    transform: rotate(0deg) translate(250px) rotate(0deg);
-  }
-  100% {
-    transform: rotate(360deg) translate(250px) rotate(-360deg);
-  }
-}
-
-@include mediaFirstBrakePoint {
-  .space__content {
-    width: 1030px;
-  }
-}
-@include mediaTablet {
-  .space__content {
-    width: 800px;
-  }
-}
-@include mediaBigMobile {
-  /* Стили орбит */
-  .space__content {
-    width: 520px;
-    height: 350px;
-  }
-  /* Размеры орбит */
-  .orbit-1 {
-    width: 7px;
-    height: 7px;
-    position: relative;
-    border: 0px solid transparent;
-  }
-
-  .orbit-1 img {
-    position: absolute;
-    top: -65px;
-    left: -65px;
-    width: 125px;
-    height: 125px;
-  }
-
-  .orbit-2 {
-    width: 37px;
-    height: 37px;
-  }
-  .orbit-3 {
-    width: 125px;
-    height: 125px;
-  }
-  .orbit-4 {
-    width: 250px;
-    height: 250px;
-  }
-  .orbit-5 {
-    width: 370px;
-    height: 370px;
-  }
-  .quote__space {
-    padding: 10px;
-    border-radius: 12px;
-    font-size: 12px;
-    color: #fff;
-    width: 170px;
-  }
-  .quote__person-logo {
-    height: 40px;
-  }
-  .quote__person-logo img {
-    height: 100%;
-  }
-
-  .quote {
-    margin: 0 0 0 5px;
-  }
-}
-@include mediaMediumMobile {
-}
-@include mediaSmallMobile {
-  /* Стили орбит */
-  .space__content {
-    width: 250px;
-    height: 250px;
-  }
-  /* Размеры орбит */
-  .orbit-1 {
-    width: 7px;
-    height: 7px;
-    position: relative;
-    border: 0px solid transparent;
-  }
-
-  .orbit-1 img {
-    position: absolute;
-    top: -50px;
-    left: -50px;
-    width: 100px;
-    height: 100px;
-  }
-
-  .orbit-2 {
-    width: 20px;
-    height: 20px;
-  }
-  .orbit-3 {
-    width: 67px;
-    height: 67px;
-  }
-  .orbit-4 {
-    width: 150px;
-    height: 150px;
-  }
-  .orbit-5 {
-    width: 300px;
-    height: 300px;
-  }
-  .quote__space {
-    padding: 10px;
-    border-radius: 12px;
-    font-size: 10px;
-    color: #fff;
-    width: 150px;
-  }
-  .quote__person-logo {
-    height: 30px;
-  }
-  .quote__person-logo img {
-    height: 100%;
-  }
-
-  .quote {
-    margin: 0 0 0 5px;
-  }
+  left: 0;
 }
