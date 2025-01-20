@@ -17,7 +17,7 @@ class Planets {
     this.axis = Array(this.planetsQuote.length).fill(0); // ось
     this.axisSpeed = randomPositionAndSpeed(this.planetsQuote, 0.5, 2); // скорось вращения вокруг оси
   }
- 
+
   spaceAnimate = () => {
     this.planetsQuote.forEach((quote, index) => {
       const orbit = this.orbits[index];

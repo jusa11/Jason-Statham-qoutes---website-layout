@@ -7,5 +7,5 @@ createStar();
 
 const plant = new Planets();
 plant.spaceAnimate();
-
+plant.catchHandle();
 
